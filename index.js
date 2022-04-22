@@ -2,22 +2,6 @@ import express from "express";
 import cors from "cors";
 import { MongoClient } from "mongodb";
 
-/* const mongoClient = new MongoClient("mongodb://localhost:27017");
-let db;
-
-mongoClient.connect().then(() => {
-  db = mongoClient.db("api_bate_papo_uol");
-});
-
-const app = express();
-app.use(cors());
-app.use(express.json);
-
-app.post("/add", (req, res) => {
-  let user = req.body;
-  db.collection("chat").insertOne(user);
-  res.send({ msg: "Ok" }).status(201);
-}); */
 const app = express();
 app.use(cors());
 app.use(express.json());
